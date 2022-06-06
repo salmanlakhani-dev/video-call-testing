@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const io = require("socket.io")(server);
+const io = require("socket.io")(app);
 const { v4: uuidV4 } = require("uuid");
 
 app.set("view engine", "ejs");
