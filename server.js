@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const io = require("socket.io")(app);
+const server = require("https").createServer(app);
+const io = require("socket.io")(server, { cors: { origin: "*" } });
 const { v4: uuidV4 } = require("uuid");
 
 app.set("view engine", "ejs");
@@ -25,6 +26,4 @@ io.on("connection", (socket) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server Started");
-});
+server.listen(3000);
