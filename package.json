@@ -1,0 +1,30 @@
+{
+  "name": "video-call-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "peerStart":"peerjs --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salmanlakhani-dev/video-call-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salmanlakhani-dev/video-call-testing/issues"
+  },
+  "homepage": "https://github.com/salmanlakhani-dev/video-call-testing#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
